@@ -1,27 +1,33 @@
 $(document).ready(function() {
 
+$(".listitem").click(function() {
+ 		$('html, body').animate({
+	      scrollTop: $( $.attr(this, 'href')).offset().top
+	    }, 6000);
+ 	});
 
-$("#l3").click(function(){
-	$('html, body').animate(){
-    scrollTop: $("#contact-section").offset().top}, 500);
+$('.s').hover(
+       function(){ $(this).addClass('hover') },
+       function(){ $(this).removeClass('hover') }
+)
+  
 
-});
-$("#l2").click(function(){
-	$('html, body').animate(){
-    scrollTop: $("#projects-section").offset().top}, 500);
-
-});
-$("#l1").click(function(){
-	$('html, body').animate(){
-    scrollTop: $("#contact-section").offset().top}, 500);
-
-});
-
-$("#l1").hover(function(){
-	$('html, body').animate(){
-    scrollTop: $("#contact-section").offset().top}, 500);
-
-});
+$("#linkedin").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});	
+		
 
 
-});
+
+
+
+
+
+
+
+		}
+);
+
+
+

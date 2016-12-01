@@ -1,6 +1,8 @@
 body{
     margin: 0px;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 #pagewrapper{
     width: 100%;
@@ -9,14 +11,15 @@ body{
 
 .section {
     width: 100%;
-    height: 700px;
+    height: 650px;
     position: relative;
     display: block;
-    border:.5px solid black;
+    border-top:.5px solid black;
 }
 
 #homesection{
     position: relative;
+    
 
 }
 
@@ -30,6 +33,7 @@ body{
 }
 
 #about{
+
     font-size: 20;
     text-align: center;
     width: 60%;
@@ -44,8 +48,7 @@ body{
     width: 10px;
     height: 10px;
     position: absolute;
-    background-color: black;
-    top:50%;
+    top:45%;
     left: 50%;
     margin-top: 275px;
 
@@ -54,6 +57,8 @@ body{
 #aboutsection{
     position: relative;
     margin-top: 35px;
+    height: 250px;
+    margin-bottom: 35px;
 }
 
 #title-2{
@@ -131,57 +136,111 @@ margin-left: 22%;
   
 }
 
-#p1{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width:180px;
-  height:180px;
- background-color: gray;
-    display: inline-block;
+.category{
+    
+    text-align: center;
+    position: relative;
+
 }
 
+.image{
+
+    position: relative;
+
+}
+
+.text img {
+    margin-top: 60px;
+
+}
+.text img:hover{
+    cursor: pointer;
+    
+}
+
+
+.text{
+    margin-top: 50px;
+    bottom: -15em;
+    position: absolute;
+    width:180px;
+  height:180px;
+  opacity: 0.75;
+  vertical-align: middle;
+  background-color: white;
+  color: white;
+  transition: all 250ms ease-out;
+}
+
+
+
+#p1{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:180px;
+  height:180px;
+ 
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
 #p2{
+    position: relative;
+    overflow: hidden;
     margin-bottom: 20px;
     margin-top: 10px;
     width:180px;
   height:180px;
-    background-color: gray;
+    
     display: inline-block;
 }
 
 #p3{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      margin-bottom: 20px;
     margin-top: 10px;
     width:180px;
   height:180px;
- background-color: gray;
+ 
     display: inline-block;
 }
 
 #p4{
+    position: relative;
+    overflow: hidden;
      margin-bottom: 20px;
     margin-top: 10px;
     width:180px;
   height:180px;
-    background-color: gray;
+  
     display: inline-block;
 }
 
 #p5{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      margin-bottom: 20px;
     margin-top: 10px;
     width:180px;
   height:180px;
-    background-color: gray;
+    
     display: inline-block;
 }
 
+
 #p6{
+    position: relative;
+    overflow: hidden;
      margin-bottom: 20px;
     margin-top: 10px;
     width:180px;
   height:180px;
-    background-color: gray;
+    
     display: inline-block;
 }
 
@@ -199,7 +258,7 @@ margin-left: 22%;
   height:650px;
   margin-left: 15px;
   margin-right: 15px;
-  background-color: green;
+  
 }
 
 #title-4{
@@ -220,7 +279,6 @@ margin-left: 22%;
     margin-bottom: 20px;
     width:100px;
   height:100px;
- background-color: gray;
     display: inline-block;
     margin-right: 40px;
 }
@@ -229,7 +287,7 @@ margin-left: 22%;
     margin-bottom: 20px;
     width:100px;
   height:100px;
- background-color: gray;
+ 
     display: inline-block;
     margin-right: 40px;
 }
@@ -238,76 +296,111 @@ margin-left: 22%;
     margin-bottom: 20px;
     width:100px;
   height:100px;
- background-color: gray;
+
     display: inline-block;
     margin-right: 40px;
 }
  
 #menu {
     position:fixed;
-    top:0px;
-    width:100%; 
+    width: 100%;
     height:55px;
     background-color: white;
-
+    z-index: 100;
+    
 
 }
 
-#menu-right{
+
+
+/*#menu-right{
+    width:100%;
     position: fixed;
-    float:right;
     display: inline;
-    text-align: center;
     margin: 0px;
     padding: 0px;
+    float: right;
 }
+*/
 
-#nav-buttons{
-    list-style-type: none;
-    margin-left: 1050px;
-    padding: 0;
-}
+
+
 
 .listitem{
-    width: 70px;
-    float: right;
-    text-decoration: none;
-    height: 40px;
-    margin-bottom: 60px;
-
+    margin-top: 20px;
+    
 }
 
 #l1{
-    line-height: 40px;
-    display: block;
-    text-align: center; 
+    margin-right: 20px;
     text-decoration: none;
     color: black;
+    float: right;
+    width:50px;
+  height:50px;
+    display: inline-block;
+    
 }
 #l2{
-    line-height: 40px;
-    display: block;
-    text-align: center; 
-    text-decoration: none;
-    color: black;
-}
-#l3{
-    line-height: 40px;
-    display: block;
-    text-align: center; 
-    text-decoration: none;
-    color: black;
+    margin-right: 40px;
+    float: right;
+    width:50px;
+  height:50px;
+    display: inline-block;
+   
 }
 
-a:hover{
+#l5{
+    margin-right: 40px;
+    float: right;
+    width:50px;
+  height:50px;
+    display: inline-block;
+    
+}
+
+
+.listitem:hover{
     cursor: pointer;
 }
 
-#menu.hover{
-    cursor: pointer;
+
+h3{
+    text-align: center;
 }
 
 
+
+#p1:hover .text{
+    bottom:.5px;
+}
+
+#p3:hover .text{
+    bottom:.5px;
+}
+
+#p5:hover .text{
+    bottom:.5px;
+}
+#linkedin:hover {
+    cursor: pointer;
+}
+
+#github:hover {
+    cursor: pointer;
+}
+#email:hover {
+    cursor: pointer;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.hover{
+    opacity: .5;
+}
 
 
 
